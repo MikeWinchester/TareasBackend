@@ -1,0 +1,15 @@
+Enunciado:
+
+Crea una aplicación de seguimiento de proyectos para equipos de trabajo. La aplicación debe permitir a los usuarios:
+
+Registrar proyectos: Un usuario puede crear un proyecto con un nombre, descripción, fecha de inicio y fecha de finalización estimada.
+Asignar tareas a proyectos: Cada proyecto puede tener múltiples tareas, cada una con un título, descripción, responsable, fecha límite y estado (pendiente, en progreso, completada).
+Gestión de usuarios: El administrador del proyecto puede agregar usuarios al proyecto y asignarles roles (administrador, miembro).
+Seguimiento de progreso: La aplicación debe mostrar el progreso de cada proyecto, calculado como el porcentaje de tareas completadas.
+Filtrar y buscar: Los usuarios deben poder filtrar proyectos por estado (en progreso, completados, atrasados) y buscar tareas dentro de un proyecto.
+Notificaciones: Si una tarea está próxima a vencer (menos de 48 horas), el responsable de la tarea debe recibir una notificación visual en la interfaz.
+Requerimientos adicionales:
+
+Los usuarios deben estar autenticados para gestionar o visualizar proyectos y tareas.
+El administrador del proyecto puede editar y eliminar proyectos y tareas.
+Los miembros pueden ver y actualizar solo las tareas que se les han asignado.
