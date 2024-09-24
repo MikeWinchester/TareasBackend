@@ -2,15 +2,9 @@ CREATE DATABASE GESTIONPROYECTOS;
 
 USE GESTIONPROYECTOS;
 
-
 CREATE TABLE rol(
     idrol int AUTO_INCREMENT PRIMARY KEY ,
     descripcion varchar(50)
-);
-
-CREATE TABLE tipousuario(
-    idtipousuario int AUTO_INCREMENT PRIMARY KEY ,
-    descripcion varchar(200)
 );
 
 CREATE TABLE usuario(
@@ -18,11 +12,7 @@ CREATE TABLE usuario(
     nombre varchar(50),
     apellido varchar(50),
     correo varchar(100),
-    contrasena varchar (100),
-    idrol int,
-    idtipousuario int,
-    foreign key (idrol) references rol (idrol),
-    foreign key (idtipousuario) references tipousuario(idtipousuario)
+    contrasena varchar (100)
 );
 
 CREATE TABLE estado(
@@ -54,10 +44,12 @@ CREATE TABLE tarea(
     foreign key(idestado) references estado(idestado)
 );
 
-CREATE TABLE usuarioxproyecto(
+CREATE TABLE usuarioxproyectoxrol(
     idusuario int,
     idproyecto int,
-    PRIMARY KEY(idusuario, idproyecto),
+    idrolUsuario int,
+    PRIMARY KEY(idusuario, idproyecto, idrolUsuario),
     foreign key (idusuario) references usuario(idusuario),
-    foreign key (idproyecto) references proyecto(idproyecto)
+    foreign key (idproyecto) references proyecto(idproyecto),
+    foreign key (idrolUsuario) references rol(idrol)
 );
