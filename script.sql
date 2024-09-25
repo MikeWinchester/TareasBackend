@@ -17,7 +17,7 @@ CREATE TABLE usuario(
 );
 
 CREATE TABLE estado(
-    id_estado int AUTO_INCREMENT PRIMARY KEY ,
+    id_estado int AUTO_INCREMENT PRIMARY key,
     descripcion varchar(50)
 );
 
