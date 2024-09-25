@@ -1,0 +1,16 @@
+ENDPOINTS
+-	Crear usuario
+-	Login
+-	Crear Proyecto
+-	Crear tarea
+-	Asignar proyecto (asignar roles)
+-	Calcular progreso
+-	Filtrar proyectos
+-	ObtenerTarea (String nombre)
+-	IsDue (boolean)
+-	Editar Proyecto
+-	Eliminar Proyecto
+-	Editar Tarea
+-	Eliminar Tarea
+-	Actualizar Tarea
+-	Obtener Tarea
