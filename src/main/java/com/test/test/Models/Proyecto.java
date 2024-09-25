@@ -42,11 +42,11 @@ public class Proyecto {
     private Date fechafinalizacion;
 
     @ManyToOne
-    @JoinColumn(name = "idEstado", referencedColumnName = "idEstado")
+    @JoinColumn(name = "id_estado", referencedColumnName = "id_estado")
     private Estado estado;
 
     @ManyToOne()
-    @JoinColumn(name = "idUsuario", referencedColumnName = "idUsuario")
+    @JoinColumn(name = "id_usuario", referencedColumnName = "id_usuario")
     private Usuario Administrador;
 
 

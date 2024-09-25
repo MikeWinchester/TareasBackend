@@ -42,6 +42,6 @@ public class Tarea {
     private Proyecto proyecto;
 
     @ManyToOne
-    @Column(name = "id_estado")
+    @JoinColumn(name = "id_estado")
     private Estado estado;
 }
