@@ -1,7 +1,6 @@
 CREATE DATABASE gestion_proyectos;
 
 USE gestion_proyectos;
- 
 
 CREATE TABLE rol(
     id_rol int AUTO_INCREMENT PRIMARY KEY ,
@@ -46,10 +45,10 @@ CREATE TABLE tarea(
 );
 
 CREATE TABLE usuarioxproyectoxrol(
+	id_usuario_proyecto_rol int AUTO_INCREMENT PRIMARY key,
     id_usuario int,
     id_proyecto int,
     id_rol int,
-    PRIMARY KEY(id_usuario, id_proyecto, id_rol),
     foreign key (id_usuario) references usuario(id_usuario),
     foreign key (id_proyecto) references proyecto(id_proyecto),
     foreign key (id_rol) references rol(id_rol)
@@ -57,9 +56,9 @@ CREATE TABLE usuarioxproyectoxrol(
 
 
 CREATE TABLE usuarioxtarea(
+	id_usuario_tarea int AUTO_INCREMENT PRIMARY key,
     id_usuario int,
     id_tarea int,
-    PRIMARY KEY(id_usuario, id_tarea),
     foreign key (id_usuario) references usuario(id_usuario),
     foreign key (id_tarea) references tarea(id_tarea)
 );

@@ -16,6 +16,7 @@ import lombok.Setter;
 @Setter
 public class UsuarioXTarea {
     
+    
     private int idUsuario;
 
     private int idTarea;
