@@ -1,15 +1,15 @@
 -	Crear usuario
--	Login
--	Crear Proyecto
--	Crear tarea
+-	Login -> done
+-	Crear Proyecto -> done
+-	Crear tarea -> done hjvjh
 -	Asignar proyecto (asignar roles)
 -	Calcular progreso
--	Filtrar proyectos
--	ObtenerTarea (String nombre)
+-	Filtrar proyectos por estado -> done
+-	ObtenerTarea (String nombre) y filtrar tarea por proyecto -> done
 -	IsDue (boolean)
 -	Editar Proyecto
 -	Eliminar Proyecto
--	Editar Tarea
+-	Editar Tarea -> done
 -	Eliminar Tarea
 -	Actualizar Tarea
 -	Obtener Tarea
